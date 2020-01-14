@@ -1,0 +1,14 @@
+version: '3.0'
+services:
+  hola:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: azure
+    ports:
+      - 8080
+    networks:
+      - network1
+
+networks:
+  network1:
